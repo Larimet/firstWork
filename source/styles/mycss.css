@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat, serif;
+    background: linear-gradient(110deg, rgb(28, 137, 130), rgb(1, 25, 23));
+}
+
+p {
+    color: aquamarine;
+}
+
+.nav-link {
+    color: rgb(27, 245, 161);
+}
+.navbar-nav .nav-link.active {
+    color: rgb(28, 163, 118);
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-nav {
+    font-weight:500;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.btn-primary {
+    background-color: rgb(28, 163, 118);
+    border-color: rgb(28, 163, 118);
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(250deg, rgb(15, 86, 81), rgb(3, 42, 39));
+}
+
+.card {
+    background: linear-gradient(250deg, rgb(15, 86, 81), rgb(3, 42, 39));
+    color: aquamarine;
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+.footer-text,
+.slide-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media(max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.btn-outline-primary {
+    border-color: rgb(28, 163, 118);
+    color: aquamarine;
+}
+
+.btn-outline-primary,
+footer {
+    background: linear-gradient(250deg, rgb(15, 86, 81), rgb(3, 42, 39));
+}
+
+.btn-outline-primary:hover {
+    border-color: rgb(158, 214, 195);
+}
+
+.media-links {
+    display: flex;
+    /* Выравн. по горизонтали */
+    justify-content: center;
+    /* Выравн. по вертикали */
+    align-items: center;
+}
